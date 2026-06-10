@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int signo(int num)
+{
+    if (num > 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return -1;
+    }
+}
+
+int absoluto(int num)
+{
+    if (num < 0)
+    {
+        return -num;
+    }
+    else
+    {
+        return num;
+    }
+}
+void guarda(int *num)
+{
+   printf("Ingrese un numero: ");
+   scanf("%d", num);
+}
+int main()
+{
+    int num, s_num, a_num;
+    guarda(&num);
+    s_num = signo(num);
+    a_num = absoluto(num);
+    printf("El signo del numero es: %d\n", s_num);
+    printf("El valor absoluto del numero es: %d\n", a_num);
+    return 0;
+}

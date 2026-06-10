@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void mostrar() 
+{
+    printf("Nombre: Sebastian\n");
+    printf("Apellido: Rivero\n");
+}
+int main()
+{
+    mostrar();
+    return 0;
+}

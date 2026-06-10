@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+float guarda(int num1, int num2)
+{
+    printf("Ingrese el primer numero entero: ");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo numero entero: ");
+    scanf("%d", &num2);
+    return (num1 + num2) / 2.0;
+}
+
+int main()
+{
+    int num1, num2;
+    float media = guarda(num1, num2);
+    printf("La media de los numeros es: %.2f\n", media);
+    return 0;
+}

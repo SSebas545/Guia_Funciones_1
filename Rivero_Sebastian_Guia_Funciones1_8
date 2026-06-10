@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void dias_a_horas(int dias) 
+{
+    int horas = dias * 24;
+    printf("%d días equivalen a %d horas.\n", dias, horas);
+}
+void horas_a_dias(int horas) 
+{
+    int dias = horas / 24;
+    printf("%d horas equivalen a %d días.\n", horas, dias);
+}
+int main() 
+{
+    int dias, horas;
+
+    printf("Ingrese la cantidad de días: ");
+    scanf("%d", &dias);
+    dias_a_horas(dias);
+
+    printf("Ingrese la cantidad de horas: ");
+    scanf("%d", &horas);
+    horas_a_dias(horas);
+
+    return 0;
+}

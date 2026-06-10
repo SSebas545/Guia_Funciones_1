@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+void mostrar(char* numero)
+{
+    printf("\nEl número completo ingresado es: %s\n", numero);
+}
+
+void cargar(char* numero)
+{
+    int i;
+    printf("Ingrese un número de 6 dígitos:\n");
+
+    for (i = 0; i < 6; i++) {
+        scanf(" %c", &numero[i]); 
+        numero[i+1] = '\0';
+
+        if (i == 0) {
+            printf("%c\n", numero[i]);
+        } else {
+            for (int j = 0; j < i; j++) {
+                printf("*");
+            }
+            printf("%c\n", numero[i]);
+        }
+    }
+    printf("******\n");
+}
+
+int main()
+{
+    char numero[7], respuesta;
+    cargar(numero);
+    printf("Quiere ver el numero ingresado? (s/n): ");
+    scanf(" %c", &respuesta);
+    if (respuesta == 's' || respuesta == 'S') {
+        mostrar(numero);
+    }
+    return 0;
+}

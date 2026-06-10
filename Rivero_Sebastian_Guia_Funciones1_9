@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int calcular_nota(int nota1, int nota2, int nota3) 
+{
+    float promedio = (nota1 + nota2 + nota3) / 3.0;
+    if(promedio >= 9 && promedio <= 10)
+        return 4;
+    else if(promedio >= 8 && promedio < 9)
+        return 3;
+    else if(promedio >= 7 && promedio < 8)
+        return 2;
+    else if(promedio >= 6 && promedio < 7)
+        return 1;
+    else
+        return 0;
+}
+
+int main() 
+{
+    int nota1, nota2, nota3, resultado;
+    printf("Ingrese la primera nota: ");
+    scanf("%d", &nota1);
+    printf("Ingrese la segunda nota: ");
+    scanf("%d", &nota2);
+    printf("Ingrese la tercera nota: ");
+    scanf("%d", &nota3);
+
+    resultado = calcular_nota(nota1, nota2, nota3);
+    printf("La nota final es: %d\n", resultado);
+
+    return 0;
+}

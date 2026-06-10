@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void guarda(int *numero)
+{
+    printf("Ingrese un numero entero: ");
+    scanf("%d", numero);
+}
+void mostrar(int numero)
+{
+    printf("El simbolo correspondiente al numero %d es: %c\n", numero, (char)numero);
+}
+
+int main()
+{
+    int numero;
+    guarda(&numero);
+    mostrar(numero);
+    return 0;
+}
