@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-Escribe una función que calcule el producto de dos números a y b enteros positivos, sin
-usar el operador * o que calcule la división entera entre los mismos sin usar el operador /.
-Validar los ingresos.
-
 int producto(int a, int b) {
     if (a <= 0 || b <= 0) {
         printf("Error: Ambos números deben ser enteros positivos.\n");
